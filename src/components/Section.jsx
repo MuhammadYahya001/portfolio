@@ -1,14 +1,21 @@
-export default function Section({ id, eyebrow, title, children }) {
+import { useScrollReveal } from "../hooks/useScrollReveal";
+import { forwardRef } from "react";
+
+const Section = forwardRef(({ id, eyebrow, title, children }, ref) => {
   return (
-    <section id={id} className="scroll-mt-24 px-4 py-14">
+    <section
+      ref={ref}
+      id={id}
+      className="scroll-mt-32 scroll-reveal px-4 py-20 sm:py-32"
+    >
       <div className="mx-auto max-w-6xl">
-        <div className="mb-8">
-          {eyebrow ? (
-            <p className="font-mono text-xs tracking-widest text-cyan-300/90">
+        <div className="mb-12">
+          {eyebrow && (
+            <p className="inline-block rounded-full border border-cyan-400/30 bg-cyan-400/5 px-3 py-1 font-mono text-xs font-semibold uppercase tracking-widest text-cyan-300">
               {eyebrow}
             </p>
-          ) : null}
-          <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+          )}
+          <h2 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">
             {title}
           </h2>
         </div>
@@ -16,4 +23,8 @@ export default function Section({ id, eyebrow, title, children }) {
       </div>
     </section>
   );
-}
+});
+
+Section.displayName = "Section";
+
+export default Section;

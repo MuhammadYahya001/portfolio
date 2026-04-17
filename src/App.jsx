@@ -7,12 +7,14 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className='bg-slate-950 text-white'>
+    <div className="relative min-h-screen bg-slate-950 text-white overflow-x-hidden">
       <Navbar />
-      <Hero />
-      <Projects />
-      <Skills />
-      <Contact />
+      <main className="relative z-10">
+        <Hero />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );
