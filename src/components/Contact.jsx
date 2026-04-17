@@ -65,7 +65,7 @@ export default function Contact() {
             <h3 className="mt-4 text-lg font-semibold text-white">
               {method.label}
             </h3>
-            <p className="mt-2 text-sm text-slate-400 break-all hover:text-cyan-400 transition-premium">
+            <p className="mt-2 text-sm text-slate-400 break-all hover:text-green-400 transition-premium">
               {method.value}
             </p>
             {method.label === "Email" && (
@@ -74,7 +74,7 @@ export default function Contact() {
                   e.preventDefault();
                   handleCopyEmail(method.value);
                 }}
-                className="mt-4 rounded-lg border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-300 transition-premium hover:border-cyan-400/50 hover:bg-cyan-400/20 focus-ring"
+                className="mt-4 rounded-lg border border-green-400/30 bg-green-400/10 px-3 py-1 text-xs font-medium text-green-300 transition-premium hover:border-green-400/50 hover:bg-green-400/20 focus-ring"
               >
                 {copied ? "Copied!" : "Copy"}
               </button>
@@ -83,7 +83,7 @@ export default function Contact() {
         ))}
       </div>
 
-      <div className="mt-12 rounded-2xl border border-cyan-400/20 bg-gradient-to-r from-cyan-400/5 to-transparent p-8">
+      <div className="mt-12 rounded-2xl border border-green-400/20 bg-gradient-to-r from-green-400/5 to-transparent p-8">
         <h3 className="text-lg font-bold text-white">Currently Available</h3>
         <p className="mt-2 text-slate-400">
           I'm open to interesting projects, collaborations, and professional opportunities. Response time: Usually within 24-48 hours.

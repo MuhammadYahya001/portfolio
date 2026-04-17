@@ -12,7 +12,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Animated Background Grid */
+/* Animated Background Grid - Cyber theme */
 @keyframes float {
   0%,
   100% {
@@ -66,7 +66,7 @@ body {
   }
 
   .focus-ring {
-    @apply focus:outline-none focus:ring-2 focus:ring-cyan-400/50 focus:ring-offset-2 focus:ring-offset-slate-950;
+    @apply focus:outline-none focus:ring-2 focus:ring-green-400/50 focus:ring-offset-2 focus:ring-offset-slate-950;
   }
 
   /* Premium button base */
@@ -75,22 +75,22 @@ body {
   }
 
   .btn-primary {
-    @apply btn-premium bg-gradient-to-r from-cyan-500 to-cyan-600 text-slate-950 hover:from-cyan-400 hover:to-cyan-500 focus-ring shadow-lg shadow-cyan-500/20;
+    @apply btn-premium bg-gradient-to-r from-green-600 to-emerald-600 text-white hover:from-green-500 hover:to-emerald-500 focus-ring shadow-lg shadow-green-500/20;
   }
 
   .btn-secondary {
-    @apply btn-premium border border-slate-700 bg-slate-900/40 text-slate-100 hover:border-slate-600 hover:bg-slate-900/60 focus-ring;
+    @apply btn-premium border border-green-700/50 bg-green-900/30 text-green-100 hover:border-green-600 hover:bg-green-900/60 focus-ring;
   }
 
   /* Card premium styling */
   .card-premium {
-    @apply rounded-2xl border border-slate-800 bg-gradient-to-br from-slate-900/60 to-slate-900/30 backdrop-blur-sm transition-premium hover-lift;
+    @apply rounded-2xl border border-green-800/30 bg-gradient-to-br from-green-900/20 to-slate-900/30 backdrop-blur-sm transition-premium hover-lift;
   }
 
   /* Animated gradient border */
   .gradient-border {
     position: relative;
-    background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(6, 182, 212, 0.05));
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(16, 185, 129, 0.05));
   }
 
   .gradient-border::before {
@@ -102,7 +102,7 @@ body {
     bottom: 0;
     border-radius: inherit;
     padding: 1px;
-    background: linear-gradient(135deg, #06b6d4, #0891b2);
+    background: linear-gradient(135deg, #22c55e, #10b981);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: exclude;
     opacity: 0;
@@ -114,7 +114,7 @@ body {
   }
 }
 
-/* Subtle background pattern */
+/* Subtle background pattern - Cyber theme */
 body::before {
   content: '';
   position: fixed;
@@ -123,7 +123,7 @@ body::before {
   right: 0;
   bottom: 0;
   background-image: 
-    radial-gradient(circle at 1px 1px, rgba(6, 182, 212, 0.03) 1px, transparent 1px);
+    radial-gradient(circle at 1px 1px, rgba(34, 197, 94, 0.03) 1px, transparent 1px);
   background-size: 40px 40px;
   pointer-events: none;
   z-index: 1;
@@ -136,8 +136,8 @@ body::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse at 20% 50%, rgba(6, 182, 212, 0.05), transparent 50%),
-    radial-gradient(ellipse at 80% 50%, rgba(6, 182, 212, 0.03), transparent 50%);
+  background: radial-gradient(ellipse at 20% 50%, rgba(34, 197, 94, 0.08), transparent 50%),
+    radial-gradient(ellipse at 80% 50%, rgba(16, 185, 129, 0.05), transparent 50%);
   pointer-events: none;
   z-index: 0;
 }
@@ -164,7 +164,7 @@ section {
   }
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar - Cyber theme */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -174,10 +174,11 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(6, 182, 212, 0.3);
+  background: rgba(34, 197, 94, 0.3);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(6, 182, 212, 0.5);
+  background: rgba(34, 197, 94, 0.5);
 }
+

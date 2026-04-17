@@ -6,7 +6,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="inline-flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-cyan-400" />
+              <span className="h-2 w-2 rounded-full bg-green-400" />
               <span className="font-semibold text-white">Muhammad Yahya Jan</span>
             </div>
             <p className="mt-2 text-sm text-slate-400">
@@ -19,17 +19,17 @@ export default function Footer() {
             <h3 className="font-semibold text-white">Quick Links</h3>
             <ul className="mt-4 space-y-2 text-sm text-slate-400">
               <li>
-                <a href="#projects" className="transition-premium hover:text-cyan-400">
+                <a href="#projects" className="transition-premium hover:text-green-400">
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#skills" className="transition-premium hover:text-cyan-400">
+                <a href="#skills" className="transition-premium hover:text-green-400">
                   Skills
                 </a>
               </li>
               <li>
-                <a href="#contact" className="transition-premium hover:text-cyan-400">
+                <a href="#contact" className="transition-premium hover:text-green-400">
                   Contact
                 </a>
               </li>
@@ -45,7 +45,7 @@ export default function Footer() {
                   href="https://github.com/MuhammadYahya001"
                   target="_blank"
                   rel="noreferrer"
-                  className="transition-premium hover:text-cyan-400"
+                  className="transition-premium hover:text-green-400"
                 >
                   GitHub
                 </a>
@@ -55,7 +55,7 @@ export default function Footer() {
                   href="https://www.linkedin.com/in/muhammad-yahya-jan-03b344325"
                   target="_blank"
                   rel="noreferrer"
-                  className="transition-premium hover:text-cyan-400"
+                  className="transition-premium hover:text-green-400"
                 >
                   LinkedIn
                 </a>
@@ -63,7 +63,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:muhammadyahyajan001@gmail.com"
-                  className="transition-premium hover:text-cyan-400"
+                  className="transition-premium hover:text-green-400"
                 >
                   Email
                 </a>

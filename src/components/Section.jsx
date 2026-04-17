@@ -11,7 +11,7 @@ const Section = forwardRef(({ id, eyebrow, title, children }, ref) => {
       <div className="mx-auto max-w-6xl">
         <div className="mb-12">
           {eyebrow && (
-            <p className="inline-block rounded-full border border-cyan-400/30 bg-cyan-400/5 px-3 py-1 font-mono text-xs font-semibold uppercase tracking-widest text-cyan-300">
+            <p className="inline-block rounded-full border border-green-400/30 bg-green-400/5 px-3 py-1 font-mono text-xs font-semibold uppercase tracking-widest text-green-300">
               {eyebrow}
             </p>
           )}

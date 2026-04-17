@@ -2,6 +2,7 @@
 
 const LINKS = [
   { href: '#projects', label: 'Projects' },
+  { href: '#education', label: 'Education' },
   { href: '#skills', label: 'Skills' },
   { href: '#contact', label: 'Contact' },
 ];
@@ -31,12 +32,12 @@ export default function Navbar() {
           href="#top"
           className="group inline-flex items-center gap-2 focus-ring rounded-lg"
         >
-          <span className="h-2.5 w-2.5 rounded-full bg-cyan-400 shadow-[0_0_20px_rgba(34,211,238,.6)] group-hover:shadow-[0_0_25px_rgba(34,211,238,.8)] transition-premium" />
+          <span className="h-2.5 w-2.5 rounded-full bg-green-400 shadow-[0_0_20px_rgba(34,197,94,.6)] group-hover:shadow-[0_0_25px_rgba(34,197,94,.8)] transition-premium" />
           <span className="text-lg font-bold tracking-tight text-white">
             MYJ
           </span>
           <span className="hidden text-xs text-slate-400 sm:inline">
-            / Software Engineer
+            / Cyber Security Specialist
           </span>
         </a>
 
@@ -45,7 +46,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-medium text-slate-300 transition-premium hover:text-cyan-400 focus-ring rounded py-1 px-2"
+              className="text-sm font-medium text-slate-300 transition-premium hover:text-green-400 focus-ring rounded py-1 px-2"
             >
               {l.label}
             </a>
@@ -79,7 +80,7 @@ export default function Navbar() {
           <a
             key={l.href}
             href={l.href}
-            className="text-xs font-medium text-slate-400 transition-premium hover:text-cyan-400 focus-ring rounded px-2 py-1"
+            className="text-xs font-medium text-slate-400 transition-premium hover:text-green-400 focus-ring rounded px-2 py-1"
           >
             {l.label}
           </a>
@@ -96,7 +97,7 @@ function NavIconLink({ href, label, title, external }) {
       title={title}
       target={external ? '_blank' : undefined}
       rel={external ? 'noreferrer' : undefined}
-      className="inline-flex items-center justify-center rounded-lg border border-slate-700 bg-slate-900/60 p-2.5 text-slate-300 transition-premium hover:border-cyan-400/50 hover:bg-slate-900 hover:text-cyan-400 focus-ring"
+      className="inline-flex items-center justify-center rounded-lg border border-slate-700 bg-slate-900/60 p-2.5 text-slate-300 transition-premium hover:border-green-400/50 hover:bg-slate-900 hover:text-green-400 focus-ring"
       aria-label={label}
     >
       <span className="text-sm font-medium">{label.charAt(0)}</span>

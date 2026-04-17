@@ -58,13 +58,13 @@ export default function Projects() {
 
       <div className="mt-12 rounded-2xl border border-slate-800 bg-gradient-to-r from-slate-900/40 to-transparent p-8">
         <p className="text-sm text-slate-400">
-          <span className="font-semibold text-cyan-400">Interested in more?</span>{' '}
+          <span className="font-semibold text-green-400">Interested in more?</span>{' '}
           Check out my{' '}
           <a
             href="https://github.com/MuhammadYahya001"
             target="_blank"
             rel="noreferrer"
-            className="text-cyan-400 hover:text-cyan-300 transition-premium underline-offset-2 hover:underline"
+            className="text-green-400 hover:text-green-300 transition-premium underline-offset-2 hover:underline"
           >
             GitHub profile
           </a>{' '}
