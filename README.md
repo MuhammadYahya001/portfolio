@@ -73,14 +73,5 @@ portfolio/
 └── package.json
 ```
 
----
-
-## 📬 Contact
-
-- **Email:** muhammadyahyajan001@gmail.com
-- **GitHub:** [@MuhammadYahya001](https://github.com/MuhammadYahya001)
-- **LinkedIn:** [Muhammad Yahya Jan](https://www.linkedin.com/in/muhammad-yahya-jan-03b344325)
-
----
 
 © 2026 Muhammad Yahya Jan • Built with React + Vite • Deployed on Netlify
