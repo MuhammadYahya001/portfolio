@@ -51,8 +51,10 @@ export default function Projects() {
       </p>
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2">
-        {PROJECTS.map((p) => (
-          <ProjectCard key={p.title} {...p} />
+        {PROJECTS.map((p, index) => (
+          <div key={p.title} style={{ animationDelay: `${index * 150}ms` }} className="scroll-reveal">
+            <ProjectCard {...p} featured={p.featured} />
+          </div>
         ))}
       </div>
 

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export function TypeWriter({ text, speed = 50, delay = 0 }) {
+export function TypeWriter({ text, speed = 25, delay = 0 }) {
   const [displayedText, setDisplayedText] = useState('');
   const [isComplete, setIsComplete] = useState(false);
 

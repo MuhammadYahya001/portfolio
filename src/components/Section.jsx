@@ -6,7 +6,7 @@ const Section = forwardRef(({ id, eyebrow, title, children }, ref) => {
     <section
       ref={ref}
       id={id}
-      className="scroll-mt-32 scroll-reveal px-4 py-20 sm:py-32"
+      className="scroll-mt-32 scroll-reveal px-4 py-12 sm:py-20"
     >
       <div className="mx-auto max-w-6xl">
         <div className="mb-12">

@@ -135,15 +135,46 @@ export default function Skills() {
         </div>
       </div>
 
-      {/* CTF Achievement */}
-      <div className="mt-8 rounded-2xl border border-green-400/20 bg-gradient-to-r from-green-900/20 to-slate-900/30 p-8">
-        <div className="flex items-start gap-4">
-          <div className="text-4xl">🏆</div>
-          <div>
-            <h3 className="text-xl font-bold text-white">Black Hat MEA CTF</h3>
-            <p className="mt-2 text-slate-300">
-              Achieved <span className="font-semibold text-green-400">top 100 global ranking</span> in Black Hat Middle East & Africa CTF competition. Solved 20+ picoCTF challenges and participated in 10+ competitive cybersecurity competitions.
-            </p>
+      {/* CTF Achievements - Split into 3 boxes */}
+      <div className="mt-12">
+        <h3 className="text-xl font-bold text-white mb-8 flex items-center gap-2">
+          🏆 Black Hat MEA CTF Achievements
+        </h3>
+        <div className="grid gap-6 sm:grid-cols-3">
+          {/* Global Ranking Box */}
+          <div className="group scroll-reveal rounded-2xl border border-green-400/30 bg-gradient-to-br from-green-900/40 to-slate-900/40 p-8 hover:border-green-400/60 hover:shadow-2xl hover:shadow-green-500/20 hover:-translate-y-2 transition-all duration-500">
+            <div className="flex flex-col items-center text-center">
+              <div className="text-5xl mb-4 group-hover:scale-125 group-hover:rotate-12 transition-transform duration-300">🌍</div>
+              <h3 className="text-lg font-bold text-white">Global Ranking</h3>
+              <p className="mt-3 text-3xl font-bold text-green-400">Top 100</p>
+              <p className="mt-2 text-sm text-slate-400">
+                Ranked among the top 100 globally in Black Hat Middle East & Africa CTF competition
+              </p>
+            </div>
+          </div>
+
+          {/* PicoCTF Challenges Box */}
+          <div className="group scroll-reveal rounded-2xl border border-green-400/30 bg-gradient-to-br from-green-900/40 to-slate-900/40 p-8 hover:border-green-400/60 hover:shadow-2xl hover:shadow-green-500/20 hover:-translate-y-2 transition-all duration-500 [animation-delay:100ms]">
+            <div className="flex flex-col items-center text-center">
+              <div className="text-5xl mb-4 group-hover:scale-125 group-hover:-rotate-12 transition-transform duration-300">🔐</div>
+              <h3 className="text-lg font-bold text-white">PicoCTF Challenges</h3>
+              <p className="mt-3 text-3xl font-bold text-green-400">20+</p>
+              <p className="mt-2 text-sm text-slate-400">
+                Successfully solved over 20 picoCTF challenges demonstrating strong problem-solving skills
+              </p>
+            </div>
+          </div>
+
+          {/* Competitions Box */}
+          <div className="group scroll-reveal rounded-2xl border border-green-400/30 bg-gradient-to-br from-green-900/40 to-slate-900/40 p-8 hover:border-green-400/60 hover:shadow-2xl hover:shadow-green-500/20 hover:-translate-y-2 transition-all duration-500 [animation-delay:200ms]">
+            <div className="flex flex-col items-center text-center">
+              <div className="text-5xl mb-4 group-hover:scale-125 group-hover:rotate-12 transition-transform duration-300">⚔️</div>
+              <h3 className="text-lg font-bold text-white">Competitions</h3>
+              <p className="mt-3 text-3xl font-bold text-green-400">10+</p>
+              <p className="mt-2 text-sm text-slate-400">
+                Participated in 10+ competitive cybersecurity competitions showcasing diverse skills
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -187,10 +218,22 @@ export default function Skills() {
               key={cert}
               className="group flex items-center gap-3 rounded-lg border border-slate-700/50 bg-slate-800/30 p-4 transition-premium hover:border-green-400/30 hover:bg-slate-800/50"
             >
-              <span className="text-lg">✓</span>
+              <span className="text-lg group-hover:scale-125 transition-transform duration-300">✓</span>
               <span className="text-sm text-slate-300 group-hover:text-slate-100 transition-colors">{cert}</span>
             </div>
           ))}
+        </div>
+        
+        <div className="mt-8 flex justify-center">
+          <a
+            href="https://www.credly.com/users/muhammad-yahya-jan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 rounded-lg border border-green-400/30 bg-green-400/5 px-6 py-3 font-medium text-green-300 transition-all hover:-translate-y-1 hover:border-green-400 hover:bg-green-400/20 hover:shadow-lg hover:shadow-green-500/20"
+          >
+            🏅 View my Credly Profile
+            <span className="transition-transform group-hover:translate-x-1">→</span>
+          </a>
         </div>
       </div>
     </Section>
