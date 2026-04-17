@@ -7,7 +7,7 @@
 
 > Personal portfolio of **Muhammad Yahya Jan** — Cybersecurity student at FAST Islamabad, focused on ethical hacking, Linux tooling, and building practical security projects.
 
-🌐 **Live:** [https://69e1cbb108020f30c26c70e7--muhammadyahyajan.netlify.app/]((https://muhammadyahyajan.netlify.app))
+🌐 **Live:** [https://muhammadyahyajan.netlify.app]
 
 ---
 
