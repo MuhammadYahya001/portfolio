@@ -1,7 +1,7 @@
 # Muhammad Yahya Jan — Portfolio
 
+[![Live Site](https://img.shields.io/badge/Live%20Site-Visit-cyan?style=flat-square&logo=netlify)](https://muhammadyahyajan.netlify.app/)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5cf116bc-e960-4929-95c2-f7af93e2e194/deploy-status)](https://app.netlify.com/projects/muhammadyahyajan/deploys)
-[![Live Site](https://img.shields.io/badge/Live%20Site-Visit-cyan?style=flat-square&logo=netlify)](https://69e1cbb108020f30c26c70e7--muhammadyahyajan.netlify.app/)
 [![React](https://img.shields.io/badge/React-19-blue?style=flat-square&logo=react)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-8-purple?style=flat-square&logo=vite)](https://vite.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3-38bdf8?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
