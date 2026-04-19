@@ -79,7 +79,7 @@ export default function Footer() {
               © {new Date().getFullYear()} Muhammad Yahya Jan. All rights reserved.
             </p>
             <p className="text-xs text-slate-600">
-              Built with React • Vite • Tailwind • Deployed on Netlify
+              Built with React • Vite • Tailwind • Deployed on Vercel
             </p>
           </div>
         </div>
