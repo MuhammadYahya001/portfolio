@@ -20,6 +20,14 @@ const PROJECTS = [
     featured: true,
   },
   {
+    title: "PhishGuard Lite",
+    desc:
+      "AI-assisted phishing email detector powered by OpenAI and URL heuristics. Built with Streamlit for an interactive interface to analyze and flag suspicious emails in real time.",
+    tags: ["Python", "AI", "Cybersecurity", "Streamlit", "OpenAI"],
+    repoUrl: "https://github.com/MuhammadYahya001/phishguard-lite",
+    featured: true,
+  },
+  {
     title: "Neural Network from Scratch",
     desc:
       "Multi-layer perceptron implementation with manual backpropagation and NumPy. Trained on MNIST dataset achieving 95%+ accuracy without frameworks.",
