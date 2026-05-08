@@ -1,4 +1,3 @@
-import { useScrollReveal } from "../hooks/useScrollReveal";
 import { forwardRef } from "react";
 
 const Section = forwardRef(({ id, eyebrow, title, children }, ref) => {
@@ -6,10 +5,10 @@ const Section = forwardRef(({ id, eyebrow, title, children }, ref) => {
     <section
       ref={ref}
       id={id}
-      className="scroll-mt-32 scroll-reveal px-4 py-12 sm:py-20"
+      className="scroll-mt-32 scroll-reveal px-4 py-10 sm:py-16 lg:py-20"
     >
       <div className="mx-auto max-w-6xl">
-        <div className="mb-12">
+        <div className="mb-8">
           {eyebrow && (
             <p className="inline-block rounded-full border border-green-400/30 bg-green-400/5 px-3 py-1 font-mono text-xs font-semibold uppercase tracking-widest text-green-300">
               {eyebrow}

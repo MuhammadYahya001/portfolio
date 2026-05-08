@@ -42,9 +42,9 @@ export default function Hero() {
     <section
       ref={ref}
       id="top"
-      className="scroll-reveal relative px-4 py-20 sm:py-32 md:py-40"
+      className="scroll-reveal hero-ambient relative overflow-hidden px-4 py-16 sm:py-24 md:py-28"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-6xl relative z-10">
         <div className="grid gap-12 md:grid-cols-2 md:items-center">
           {/* Text Content */}
           <div>
