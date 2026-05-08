@@ -9,6 +9,7 @@ const LINKS = [
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +18,32 @@ export default function Navbar() {
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const sectionIds = LINKS.map((link) => link.href.replace('#', ''));
+    const sections = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
+
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        rootMargin: '-30% 0px -55% 0px',
+        threshold: 0.15,
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -42,15 +69,22 @@ export default function Navbar() {
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
-          {LINKS.map((l) => (
+          {LINKS.map((l) => {
+            const isActive = activeSection === l.href.replace('#', '');
+            return (
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-medium text-slate-300 transition-premium hover:text-green-400 focus-ring rounded py-1 px-2"
+              aria-current={isActive ? 'page' : undefined}
+              className={`text-sm font-medium transition-premium focus-ring rounded py-1 px-2 ${
+                isActive
+                  ? 'text-green-300 bg-green-400/10'
+                  : 'text-slate-300 hover:text-green-400'
+              }`}
             >
               {l.label}
             </a>
-          ))}
+          )})}
         </nav>
 
         <div className="flex items-center gap-3">
@@ -76,15 +110,22 @@ export default function Navbar() {
 
       {/* Mobile menu indicator */}
       <div className="mx-auto flex max-w-6xl gap-3 px-4 pb-3 md:hidden">
-        {LINKS.map((l) => (
+        {LINKS.map((l) => {
+          const isActive = activeSection === l.href.replace('#', '');
+          return (
           <a
             key={l.href}
             href={l.href}
-            className="text-xs font-medium text-slate-400 transition-premium hover:text-green-400 focus-ring rounded px-2 py-1"
+            aria-current={isActive ? 'page' : undefined}
+            className={`text-xs font-medium transition-premium focus-ring rounded px-2 py-1 ${
+              isActive
+                ? 'text-green-300 bg-green-400/10'
+                : 'text-slate-400 hover:text-green-400'
+            }`}
           >
             {l.label}
           </a>
-        ))}
+        )})}
       </div>
     </header>
   );

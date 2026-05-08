@@ -50,7 +50,7 @@ export default function Contact() {
         Whether you're interested in collaborating on a project, discussing cybersecurity, or just want to say hello—feel free to reach out.
       </p>
 
-      <div className="mt-12 grid gap-6 sm:grid-cols-3">
+      <div className="mt-10 grid gap-6 sm:grid-cols-3">
         {CONTACT_METHODS.map((method) => (
           <a
             key={method.label}
@@ -83,7 +83,7 @@ export default function Contact() {
         ))}
       </div>
 
-      <div className="mt-16 rounded-2xl border border-green-400/20 bg-gradient-to-r from-green-400/5 to-transparent p-8 hover:border-green-400/40 hover:bg-green-400/10 transition-all duration-500">
+      <div className="mt-12 rounded-2xl border border-green-400/20 bg-gradient-to-r from-green-400/5 to-transparent p-8 hover:border-green-400/40 hover:bg-green-400/10 transition-all duration-500">
         <h3 className="text-lg font-bold text-white flex items-center gap-2">
           <span className="relative flex h-3 w-3">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>

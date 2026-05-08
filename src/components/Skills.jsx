@@ -59,7 +59,7 @@ export default function Skills() {
       </p>
 
       {/* Language Proficiency Bars */}
-      <div className="mt-12">
+      <div className="mt-10">
         <h3 className="text-xl font-bold text-white mb-8 flex items-center gap-2">
           💾 Language Proficiency
         </h3>
@@ -82,7 +82,7 @@ export default function Skills() {
       </div>
 
       {/* Tech Tools */}
-      <div className="mt-12">
+      <div className="mt-10">
         <h3 className="text-xl font-bold text-white mb-8 flex items-center gap-2">
           🛠️ Tools & Technologies
         </h3>
@@ -102,11 +102,11 @@ export default function Skills() {
       </div>
 
       {/* Expertise Categories */}
-      <div className="mt-12">
+      <div className="mt-10">
         <h3 className="text-xl font-bold text-white mb-8 flex items-center gap-2">
           📚 Areas of Expertise
         </h3>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2">
+        <div className="mt-8 grid gap-6 sm:grid-cols-2">
           {EXPERTISE.map((skill) => (
             <div
               key={skill.title}
@@ -136,7 +136,7 @@ export default function Skills() {
       </div>
 
       {/* CTF Achievements - Split into 3 boxes */}
-      <div className="mt-12">
+      <div className="mt-10">
         <h3 className="text-xl font-bold text-white mb-8 flex items-center gap-2">
           🏆 Black Hat MEA CTF Achievements
         </h3>
@@ -180,7 +180,7 @@ export default function Skills() {
       </div>
 
       {/* Resume Section */}
-      <div className="mt-12 rounded-2xl border border-green-400/30 bg-gradient-to-r from-green-900/30 to-slate-900/40 p-8">
+      <div className="mt-10 rounded-2xl border border-green-400/30 bg-gradient-to-r from-green-900/30 to-slate-900/40 p-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-xl font-bold text-white">Want More Details?</h3>
@@ -201,7 +201,7 @@ export default function Skills() {
       </div>
 
       {/* Certifications */}
-      <div className="mt-12">
+      <div className="mt-10">
         <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
           🎓 Certifications
         </h3>

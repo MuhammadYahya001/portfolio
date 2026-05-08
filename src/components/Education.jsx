@@ -11,7 +11,7 @@ export default function Education() {
       eyebrow="Background"
       title="Education & Growth"
     >
-      <div className="mt-12 grid gap-8 md:grid-cols-2 md:items-center scroll-reveal animate-slide-in-left">
+      <div className="mt-10 grid gap-8 md:grid-cols-2 md:items-center scroll-reveal animate-slide-in-left">
         {/* Image */}
         <div className="relative group overflow-hidden rounded-2xl order-2 md:order-1 hover:scale-105 transition-transform duration-500">
           <div className="absolute -inset-1 bg-gradient-to-r from-green-600 via-emerald-500 to-green-600 rounded-2xl blur-lg opacity-20 group-hover:opacity-40 transition-opacity duration-500" />
