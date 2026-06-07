@@ -106,7 +106,7 @@ export default function ProjectCard({
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-sm font-medium text-green-400 transition-premium hover:text-green-300 focus-ring rounded px-2 py-1"
             >
-              <span>Watch Demo</span>
+              <span>{liveLabel || "Live Demo"}</span>
               <span className="transition-premium group-hover:translate-x-1">→</span>
             </a>
           )}
