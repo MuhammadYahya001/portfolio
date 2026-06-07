@@ -33,16 +33,18 @@ const PROJECTS = [
   },
   {
     title: "PhishGuard Lite",
-    tagline: "AI-assisted phishing defense dashboard",
+    tagline: "Heuristic phishing email detector dashboard",
     desc:
-      "AI-assisted phishing email detector powered by OpenAI and URL heuristics. Built with Streamlit for an interactive interface to analyze and flag suspicious emails in real time.",
+      "A lightweight phishing email detector powered by keyword analysis and URL heuristics. Built with Streamlit for an interactive interface to analyze and flag suspicious emails locally without external APIs.",
     highlights: [
-      "LLM-assisted email analysis",
-      "URL heuristic risk scoring",
+      "Rule-based heuristic engine",
+      "URL risk scoring & extraction",
       "Interactive Streamlit interface",
     ],
-    tech: ["Python", "Streamlit", "OpenAI", "Cybersecurity"],
+    tech: ["Python", "Streamlit", "Cybersecurity"],
     repoUrl: "https://github.com/MuhammadYahya001/phishguard-lite",
+    liveUrl: "https://phishguard-lite.streamlit.app/",
+    liveLabel: "Live Demo",
     featured: true,
   },
   {
@@ -57,9 +59,10 @@ const PROJECTS = [
       "Admin management (routes/flights)",
       "Authentication/roles",
     ],
-    tech: ["Tech: TODO (fill based on my actual project)"],
-    repoLabel: "Code (private)",
-    liveLabel: "Demo coming soon",
+    tech: ["C++", "Data Structures", "cpp-httplib", "Google Test"],
+    repoUrl: "https://github.com/MuhammadYahya001/Airline-Reservation-System",
+    liveUrl: "https://airline-reservation-system-xi.vercel.app/",
+    liveLabel: "Live Demo",
     featured: true,
   },
   {
